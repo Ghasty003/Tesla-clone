@@ -1,5 +1,7 @@
 # tesla-clone
 
+> You can view the demo at [Tesla clone](https://6328af33d0c56e28a7cf9c1d--todo-gha.netlify.app)
+
 ## Project setup
 ```
 npm install
