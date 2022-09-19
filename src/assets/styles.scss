@@ -1,0 +1,737 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+$color: #393c41;
+
+// body {
+//     display: none;
+// }
+
+nav {
+    background: url('@/assets/model-s.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    
+    .first-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: .6rem;
+        position: sticky;
+        top: 0;
+
+        div:nth-child(2) {
+            // background-color: red;
+            width: 25rem;
+            margin-left: 5rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $color;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+            }
+        }
+
+        div:nth-child(3) {
+            // background-color: red;
+            display: flex;
+            width: 16rem;
+            margin-left: 5rem;
+            justify-content: space-around;
+            align-items: center;
+            
+            h3 {
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+        }
+
+        .fa {
+            margin-right: .5rem;
+            cursor: pointer;
+        }
+    }
+
+    ul {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        overflow: auto;
+        width: 20rem;
+        padding-left: 3rem;
+        transition: all 1s;
+        // display: none;
+
+        div {
+            font-weight: bolder;
+            font-size: 2rem;
+            text-align: end;
+            cursor: pointer;
+            margin: {
+                right: .7rem;
+                top: .7rem;
+            }
+        }
+
+        li {
+            list-style: none;
+            text-transform: uppercase;
+            color: $color;
+            margin-bottom: 1.5rem;
+            font-size: .9rem;
+            font-weight: bold;
+            animation: animate-lists 1s;
+        }
+    }
+
+    .btns {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 40rem;
+        margin: {
+            left: auto;
+            right: auto;
+            top: 20rem;
+        }
+
+        button {
+            width: 256px;
+            height: 40px;
+            border-radius: 2rem;
+            border: none;
+            text-transform: uppercase;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:first-child {
+            background-color: rgba(23, 26, 32, 0.6);
+        }
+
+        button:last-child {
+            color: black;
+        }
+    }
+
+    .arrow-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 2rem;
+        margin: {
+            top: 3rem;
+        }
+        padding: {
+            bottom: .5rem;
+        }
+
+        .fa {
+            animation: animate-arrows 1s infinite;
+        }
+    }
+
+    .model-s {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 5rem;
+
+        h1 {
+            text-transform: capitalize;
+            font: {
+                weight: bold;
+                size: 2.5rem;
+            }
+        }
+
+        p {
+            font: {
+                weight: 500;
+                size: 1rem;
+            }
+            color: rgb(57, 60, 65);
+        }
+    }
+}
+
+@keyframes animate-lists {
+    from {
+        transform: translateX(100%);
+    }
+    
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes animate-arrows {
+    40% {
+        transform: translateY(8px);
+    }
+
+    80% {
+        transform: translateY(6px);
+    }
+
+    90% {
+        transform: translateY(4px);
+    }
+
+    100% {
+        transform: translateY(1px);
+    }
+}
+
+
+.model-y {
+    background: url('@/assets/model-y.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        opacity: 0;
+        transform: translateY(150px);
+
+        h1 {
+            text-transform: capitalize;
+            font: {
+                weight: bold;
+                size: 2.5rem;
+            }
+            margin-top: 5rem;
+        }
+
+        p {
+            font: {
+                weight: 500;
+                size: 1rem;
+            }
+            color: rgb(57, 60, 65);
+        }
+    }
+
+    
+
+    .btns {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 40rem;
+        margin: {
+            left: auto;
+            right: auto;
+            top: 20rem;
+        }
+        
+
+        button {
+            width: 256px;
+            height: 40px;
+            border-radius: 2rem;
+            border: none;
+            text-transform: uppercase;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:first-child {
+            background-color: rgba(23, 26, 32, 0.6);
+        }
+
+        button:last-child {
+            color: black;
+        }
+    }
+
+    .arrow-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 2rem;
+        margin: {
+            top: 3rem;
+        }
+        padding: {
+            bottom: .5rem;
+        }
+
+        .fa {
+            animation: animate-arrows 1s infinite;
+        }
+    }
+}
+
+
+.model-3 {
+    background: url('@/assets/model-3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        opacity: 0;
+        transform: translateY(150px);
+
+        h1 {
+            text-transform: capitalize;
+            font: {
+                weight: bold;
+                size: 2.5rem;
+            }
+            margin-top: 5rem;
+        }
+
+        p {
+            font: {
+                weight: 500;
+                size: 1rem;
+            }
+            color: rgb(57, 60, 65);
+        }
+    }
+
+    .btns {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 40rem;
+        margin: {
+            left: auto;
+            right: auto;
+            top: 20rem;
+        }
+
+        button {
+            width: 256px;
+            height: 40px;
+            border-radius: 2rem;
+            border: none;
+            text-transform: uppercase;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:first-child {
+            background-color: rgba(23, 26, 32, 0.6);
+        }
+
+        button:last-child {
+            color: black;
+        }
+    }
+
+    .arrow-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 2rem;
+        margin: {
+            top: 3rem;
+        }
+        padding: {
+            bottom: .5rem;
+        }
+
+        .fa {
+            animation: animate-arrows 1s infinite;
+        }
+    }
+}
+
+.model-x {
+    background: url('@/assets/model-x.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        opacity: 0;
+        transform: translateY(150px);
+
+        h1 {
+            text-transform: capitalize;
+            font: {
+                weight: bold;
+                size: 2.5rem;
+            }
+            margin-top: 5rem;
+        }
+
+        p {
+            font: {
+                weight: 500;
+                size: 1rem;
+            }
+            color: rgb(57, 60, 65);
+        }
+    }
+
+    .btns {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 40rem;
+        margin: {
+            left: auto;
+            right: auto;
+            top: 20rem;
+        }
+
+        button {
+            width: 256px;
+            height: 40px;
+            border-radius: 2rem;
+            border: none;
+            text-transform: uppercase;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:first-child {
+            background-color: rgba(23, 26, 32, 0.6);
+        }
+
+        button:last-child {
+            color: black;
+        }
+    }
+
+    .arrow-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 2rem;
+        margin: {
+            top: 3rem;
+        }
+        padding: {
+            bottom: .5rem;
+        }
+
+        .fa {
+            animation: animate-arrows 1s infinite;
+        }
+    }
+}
+
+.solar-panel {
+    background: url('@/assets/solar-panel.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        opacity: 0;
+        transform: translateY(150px);
+
+        h1 {
+            text-transform: capitalize;
+            font: {
+                weight: bold;
+                size: 2.5rem;
+            }
+            margin-top: 5rem;
+        }
+
+        p {
+            font: {
+                weight: 500;
+                size: 1rem;
+            }
+            color: rgb(57, 60, 65);
+        }
+    }
+
+    .btns {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 40rem;
+        margin: {
+            left: auto;
+            right: auto;
+            top: 20rem;
+        }
+
+        button {
+            width: 256px;
+            height: 40px;
+            border-radius: 2rem;
+            border: none;
+            text-transform: uppercase;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:first-child {
+            background-color: rgba(23, 26, 32, 0.6);
+        }
+
+        button:last-child {
+            color: black;
+        }
+    }
+
+    .arrow-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 2rem;
+        margin: {
+            top: 3rem;
+        }
+        padding: {
+            bottom: .5rem;
+        }
+
+        .fa {
+            animation: animate-arrows 1s infinite;
+        }
+    }
+}
+
+.solar-roof {
+    background: url('@/assets/solar-roof.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        opacity: 0;
+        transform: translateY(150px);
+
+        h1 {
+            text-transform: capitalize;
+            font: {
+                weight: bold;
+                size: 2.5rem;
+            }
+            margin-top: 5rem;
+        }
+
+        p {
+            font: {
+                weight: 500;
+                size: 1rem;
+            }
+            color: rgb(57, 60, 65);
+        }
+    }
+
+    .btns {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 40rem;
+        margin: {
+            left: auto;
+            right: auto;
+            top: 20rem;
+        }
+
+        button {
+            width: 256px;
+            height: 40px;
+            border-radius: 2rem;
+            border: none;
+            text-transform: uppercase;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:first-child {
+            background-color: rgba(23, 26, 32, 0.6);
+        }
+
+        button:last-child {
+            color: black;
+        }
+    }
+
+    .arrow-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 2rem;
+        margin: {
+            top: 3rem;
+        }
+        padding: {
+            bottom: .5rem;
+        }
+
+        .fa {
+            animation: animate-arrows 1s infinite;
+        }
+    }
+}
+
+.accessories {
+    background: url('@/assets/accessories.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 5rem;
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        opacity: 0;
+        transform: translateY(150px);
+
+        h1 {
+            text-transform: capitalize;
+            font: {
+                weight: bold;
+                size: 2.5rem;
+            }
+            margin-top: 1rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    .btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        margin: {
+            left: auto;
+            right: auto;
+            top: 20rem;
+        }
+
+        button {
+            width: 256px;
+            height: 40px;
+            border-radius: 2rem;
+            border: none;
+            text-transform: uppercase;
+            color: white;
+            cursor: pointer;
+            background-color: rgba(23, 26, 32, 0.6);
+        }
+    }
+
+}
+
+.header {
+    text-align: center;
+    transition: all 1s ease;
+}
+
+.header.animate-header, .btns.animate-header {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.animate-header {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.btns {
+    // position: relative;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s;
+}
+
+.btns:last-child {
+    transform: translateY(50px);
+}
+
+@media screen and ( max-width: 890px ) {
+    nav {
+        .first-div {
+            div:nth-child(2) {
+                display: none;
+            }
+        }
+        .btns {
+            flex-direction: column;
+            width: 20rem;
+            button:first-child {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .model-3, .model-y, .model-x, .solar-panel, .solar-roof {
+        .btns {
+            flex-direction: column;
+            width: 20rem;
+            button:first-child {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    nav {
+        .first-div {
+            div:nth-child(3) {
+                display: none;
+            }
+        }
+    }
+}
